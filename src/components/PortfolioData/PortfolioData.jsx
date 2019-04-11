@@ -5,7 +5,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 
 function PortfolioData() {
   const [ data, loading ] = useFetch(
-    "https://raw.githubusercontent.com/miloszekovic/mze-ninja/master/src/data/portfolio.json"
+    "https://raw.githubusercontent.com/miloszekovic/mzeninja-jsons/master/portfolio.json"
   );
   
   return (

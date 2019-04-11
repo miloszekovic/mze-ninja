@@ -1,24 +1,134 @@
 [
   {
     "id": 1,
-    "name": "Atos vrata",
-    "type": "Site",
-    "desc": "UX/UI / Front-end / WordPress",
+    "name": "Atos Vrata",
+    "type": "site",
+    "desc": "UX/UI Frontend WordPress",
     "year": 2018,
     "credit": "by: Evitbe",
     "url": "http://www.atos-vrata.rs/",
     "urlName": "Atos-vrata.rs",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/300px-Alan_Turing_Aged_16.jpg"
+    "img": "http://mze.ninja/data/img/atos-vrata.jpg"
   },
   {
     "id": 2,
-    "name": "Atos vrata 2",
-    "type": "Site 2",
-    "desc": "UX/UI / Front-end / WordPress",
-    "year": 20182,
+    "name": "Evitbe",
+    "type": "site",
+    "desc": "UX/UI Frontend WordPress",
+    "year": 2018,
+    "credit": "by: Evitbe",
+    "url": "https://www.evitbe.com/",
+    "urlName": "Evitbe.com",
+    "img": "http://mze.ninja/data/img/evitbe.jpg"
+  },
+  {
+    "id": 3,
+    "name": "VPBG",
+    "type": "site",
+    "desc": "UX/UI Frontend WordPress",
+    "year": 2017,
     "credit": "",
-    "url": "http://www.atos-vrata.rs/",
-    "urlName": "Atos-vrata.rs",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/300px-Alan_Turing_Aged_16.jpg"
+    "url": "http://www.vpbg.rs/",
+    "urlName": "Vpbg.rs",
+    "img": "http://mze.ninja/data/img/vpbg.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Moldova bridge",
+    "type": "site",
+    "desc": "UX/UI Frontend WordPress",
+    "year": 2017,
+    "credit": "",
+    "url": "http://www.moldovabridge.com/",
+    "urlName": "Moldovabridge.com",
+    "img": "http://mze.ninja/data/img/moldovabridge.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pausal",
+    "type": "app",
+    "desc": "UI development",
+    "year": 2016,
+    "credit": "",
+    "url": "https://moj.pausal.rs/#/login/",
+    "urlName": "moj.Pausal.rs",
+    "img": "http://mze.ninja/data/img/pausal.jpg"
+  },
+  {
+    "id": 6,
+    "name": "BeYou",
+    "type": "site",
+    "desc": "UX/UI Frontend WordPress",
+    "year": 2016,
+    "credit": "",
+    "url": "http://www.beyoubefree.rs/",
+    "urlName": "Beyoubefree.rs",
+    "img": "http://mze.ninja/data/img/be-you.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Zla Zla Shop",
+    "type": "ecommerce",
+    "desc": "Frontend / UI",
+    "year": 2016,
+    "credit": "",
+    "url": "http://www.zla-zla.com/zlashtek/",
+    "urlName": "Zla-zla.com",
+    "img": "http://mze.ninja/data/img/zla-zla.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Municipality Stara Pazova",
+    "type": "official site",
+    "desc": "UX/UI Frontend Drupal",
+    "year": 2015,
+    "credit": "",
+    "url": "http://www.starapazova.rs/",
+    "urlName": "Starapazova.rs",
+    "img": "http://mze.ninja/data/img/stara-pazova.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Olivebox",
+    "type": "site",
+    "desc": "UX/UI Frontend",
+    "year": 2012,
+    "credit": "by: OliveBox Inc.",
+    "url": "https://www.olivebox.net/",
+    "urlName": "Olivebox.net",
+    "img": "http://mze.ninja/data/img/olive-box-web.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Olivebox",
+    "type": "app",
+    "desc": "UX/UI Frontend",
+    "year": 2013,
+    "credit": "by: OliveBox Inc.",
+    "url": "https://www.olivebox.net/pricing-signup/",
+    "urlName": "Olivebox.net",
+    "img": "http://mze.ninja/data/img/olive-box-app.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Saint Serbia Org.",
+    "type": "site",
+    "desc": "UX/UI Frontend Drupal",
+    "year": 2014,
+    "credit": "",
+    "url": "http://www.svetasrbija.org.rs/",
+    "urlName": "Svetasrbija.org.rs",
+    "img": "http://mze.ninja/data/img/sveta-srbija.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Zonaii Italia",
+    "type": "site",
+    "desc": "UX/UI Frontend",
+    "year": 2010,
+    "credit": "",
+    "url": "http://www.zonaii.com/",
+    "urlName": "Zonaii.com",
+    "img": "http://mze.ninja/data/img/zonaii.jpg"
   }
 ]

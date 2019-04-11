@@ -157,7 +157,8 @@
                     }
                 }
 
-                &.even {
+                &:nth-child(1),
+                &:nth-child(10) {
                     width: $full / 3 + $full / 3;
 
                     @media screen and (max-width: 1440px) {
