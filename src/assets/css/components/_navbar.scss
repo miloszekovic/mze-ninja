@@ -1,0 +1,364 @@
+/* NavBar */
+aside {
+    background: $base-dark;
+    height: $full;
+    min-height: $full;
+    width: $fixH;
+    position: fixed;
+    z-index: 999;
+
+    @include animations(content-blur .5s);
+
+    @media screen and (max-width: 1080px) {
+        width: $full;
+        height: $fixH;
+        min-height: $fixH;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        -webkit-box-shadow: 0 0 5px 5px $darker;
+        -moz-box-shadow: 0 0 5px 5px $darker;
+        box-shadow: 0 0 10px 5px $darker;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: $fixM;
+        min-height: $fixM;
+    }
+
+    article {
+        position: relative;
+        background: $dark;
+
+        @media screen and (max-width: 1080px) {
+            width: $fixH;
+            height: $fixH;
+            z-index: 999;
+            background: $base-dark;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: $fixM;
+            height: $fixM;
+        }
+
+        svg {
+            fill: $base-dark;
+            width: 30px;
+            @extend .centering;
+
+            @media screen and (max-width: 1080px) {
+                fill: $base-light;
+            }
+
+            @media screen and (max-width: 480px) {
+                width: 20px;
+            }
+        }
+
+        a, a:hover, a:active {
+            @extend .opacity--reset;
+            @extend .fade;
+
+            * {
+                @extend .opacity--reset;
+                @extend .fade;
+            }
+        }
+
+        a {
+            display: block;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+            width: $fixH;
+            height: $fixH;
+
+            @media screen and (max-width: 480px) {
+                width: $fixM;
+                height: $fixM;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $base-dark;
+                -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+                -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+
+                @media screen and (max-width: 1080px) {
+                    -webkit-transform-origin: 100% 0;
+                    transform-origin: 100% 0;
+                    background: $dark;
+                }
+            }
+
+            &:hover:before,
+            &:active:before {
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+            }
+
+            &:hover svg {
+                fill: $base-light;
+
+                @media screen and (max-width: 1080px) {
+                    fill: $base-dark;
+                }
+            }
+        }
+    }
+
+    nav {
+        width: $full;
+        @extend .centering;
+        @extend .centering--left;
+        margin-top: 40px;
+
+        @media screen and (max-width: 1080px) {
+            margin-top: 5px;
+            -webkit-transform: translate(none, none);
+            -moz-transform: translate(none, none);
+            transform: translate(none, none);
+            text-align: center;
+            z-index: 888;
+        }
+
+        @media screen and (max-width: 590px) {
+            text-align: right;
+        }
+
+        ul {
+
+            li {
+                @media screen and (max-width: 1080px) {
+                    display: inline-block;
+                    width: $fixH;
+                    height: $fixH;
+                }
+
+                @media screen and (max-width: 480px) {
+                    width: $fixM;
+                    height: $fixM;
+                }
+
+                a, a:hover, a:active {
+                    @extend .opacity--reset;
+                    @extend .fade;
+
+                    * {
+                        @extend .opacity--reset;
+                        @extend .fade;
+                    }
+                }
+
+                a {
+                    display: block;
+                    -webkit-transform: perspective(1px) translateZ(0);
+                    transform: perspective(1px) translateZ(0);
+                    position: relative;
+                    -webkit-transition-property: color;
+                    transition-property: color;
+                    -webkit-transition-duration: 0.2s;
+                    transition-duration: 0.2s;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: $base-mid;
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transform-origin: 0 50%;
+                        transform-origin: 0 50%;
+                        -webkit-transition-property: transform;
+                        transition-property: transform;
+                        -webkit-transition-duration: 0.2s;
+                        transition-duration: 0.2s;
+                        -webkit-transition-timing-function: ease-out;
+                        transition-timing-function: ease-out;
+
+                        @media screen and (max-width: 1080px) {
+                            -webkit-transform: scaleY(0);
+                            transform: scaleY(0);
+                            -webkit-transform-origin: 50% 100%;
+                            transform-origin: 50% 100%;
+                        }
+                    }
+
+                    &:hover:before,
+                    &:focus:before,
+                    &:active:before {
+                        -webkit-transform: scaleX(1);
+                        transform: scaleX(1);
+                    }
+                }
+
+                div {
+                    width: $full;
+                    position: relative;
+                    padding: 15px 0;
+                    text-align: center;
+                    background: rgba($base-light, .2);
+
+                    img {
+                        width: 60%;
+                        display: block;
+                        margin: $center;
+                        color: $base-dark;
+                        text-indent: -9999px;
+                    }
+
+                    @media screen and (max-width: 1080px) {
+                        width: $fixH;
+                        height: $fixH;
+                        padding: 0;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        width: $fixM;
+                        height: $fixM;
+                    }
+                }
+
+                &:nth-child(1) {
+                    
+                    div img {
+                        width: 35%;
+
+                        @media screen and (max-width: 1080px) {
+                            padding-top: 17px;
+                        }
+
+                        @media screen and (max-width: 480px) {
+                            padding-top: 13px;
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    
+                    div {
+                        background: rgba($base-light, .4);
+
+                        img {
+                            width: 55%;
+
+                            @media screen and (max-width: 1080px) {
+                                padding-top: 15px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                padding-top: 12px;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    
+                    div {
+                        background: rgba($base-light, .6);
+
+                        img {
+                            @media screen and (max-width: 1080px) {
+                                padding-top: 18px;
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                padding-top: 14px;
+                            }
+                        }
+                    }
+                }
+                
+                &:nth-child(4) {
+                    
+                    div img {
+                        width: 40%;
+
+                        @media screen and (max-width: 1080px) {
+                            padding-top: 21px;
+                        }
+
+                        @media screen and (max-width: 480px) {
+                            padding-top: 16px;
+                        }
+                    }
+                }
+
+                .nav--button-active {
+                    display: none;
+                }
+
+                .active {
+
+                    div {
+                        background: $dark;
+                    }
+
+                    .nav--button-active {
+                        display: block;
+
+                        @media screen and (max-width: 1080px) {
+                            margin-top: -1px;
+                            height: 81px;
+                        }
+
+                        @media screen and (max-width: 480px) {
+                            height: 61px;
+                        }
+                    }
+
+                    .nav--button {
+                        display: none;
+                    }
+                }
+
+                &:nth-child(1),
+                &:nth-child(4) {
+
+                    .active {
+
+                        div {
+                            background: $darker;
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 1080px) {
+                    &:nth-child(3) {
+
+                        .active {
+
+                            div {
+                                background: $darker;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

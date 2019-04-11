@@ -1,0 +1,102 @@
+/* Contact */
+.contact--wrapper {
+    background: -webkit-linear-gradient(260deg, $dark 65%, $darker 35%);
+    background: -o-linear-gradient(260deg, $dark 65%, $darker 35%);
+    background: -moz-linear-gradient(260deg, $dark 65%, $darker 35%);
+    background: linear-gradient(260deg, $dark 65%, $darker 35%);
+
+    @include animations(content-blur .5s);
+
+    @media screen and (max-width: 1080px) {
+        background: -webkit-linear-gradient(200deg, $dark 65%, $darker 35%);
+        background: -o-linear-gradient(200deg, $dark 65%, $darker 35%);
+        background: -moz-linear-gradient(200deg, $dark 65%, $darker 35%);
+        background: linear-gradient(200deg, $dark 65%, $darker 35%);
+    }
+
+    section {
+        background: -webkit-linear-gradient(160deg, transparent 93%, $base-mid 7%);
+        background: -o-linear-gradient(160deg, transparent 93%, $base-mid 7%);
+        background: -moz-linear-gradient(160deg, transparent 93%, $base-mid 7%);
+        background: linear-gradient(160deg, transparent 93%, $base-mid 7%);
+
+        @media screen and (max-width: 1080px) {
+            background: -webkit-linear-gradient(60deg, transparent 93%, $base-light 7%);
+            background: -o-linear-gradient(60deg, transparent 93%, $base-light 7%);
+            background: -moz-linear-gradient(60deg, transparent 93%, $base-light 7%);
+            background: linear-gradient(60deg, transparent 93%, $base-light 7%);
+        }
+    }
+
+    #contact {
+        margin-top: 20px;
+
+        @media screen and (max-width: 700px) {
+            margin-top: -20px;
+        }
+
+        ul {
+
+            li {
+                padding-top: 30px;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    @extend .floating;
+                    width: $full / 2;
+
+                    @media screen and (max-width: 580px) {
+                        display: block;
+                        width: $full;
+                    }
+                }
+
+                &:nth-child(1) {
+                    padding-right: 20px;
+
+                    @media screen and (max-width: 580px) {
+                        padding-right: 0;
+                    }
+                }
+
+                &:nth-child(2) {
+                    padding-left: 20px;
+
+                    @media screen and (max-width: 580px) {
+                        padding-left: 0;
+                    }
+                }
+
+                &:nth-child(4) {
+                    text-align: right;
+                }
+                
+                input, textarea {
+                    width: $full;
+                    background: transparent;
+                    color: $light;
+                    padding: 15px 5px;
+                    border-bottom: 2px solid $base-dark;
+                    @extend .fade--logos;
+
+                    &:hover {
+                        border-bottom: 2px solid $base-light;
+                    }
+
+                    &:focus {
+                        border-bottom: 2px solid $base-mid;
+                    }
+                }
+
+                textarea {
+                    height: 64px;
+                    resize: none;
+
+                    &:focus {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

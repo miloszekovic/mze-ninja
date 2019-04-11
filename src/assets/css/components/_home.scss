@@ -1,0 +1,192 @@
+/* Homepage */
+.home--wrapper {
+    background: -webkit-linear-gradient(210deg, $dark 65%, $darker 35%);
+    background: -o-linear-gradient(210deg, $dark 65%, $darker 35%);
+    background: -moz-linear-gradient(210deg, $dark 65%, $darker 35%);
+    background: linear-gradient(210deg, $dark 65%, $darker 35%);
+
+    @include animations(content-blur .5s);
+
+    section {
+        background: -webkit-linear-gradient(130deg, transparent 95%, $base-mid 5%);
+        background: -o-linear-gradient(130deg, transparent 95%, $base-mid 5%);
+        background: -moz-linear-gradient(130deg, transparent 95%, $base-mid 5%);
+        background: linear-gradient(130deg, transparent 95%, $base-mid 5%);
+
+        @media screen and (max-width: 1080px) {
+            background: -webkit-linear-gradient(20deg, transparent 96%, $base-dark 10%);
+            background: -o-linear-gradient(20deg, transparent 96%, $base-dark 10%);
+            background: -moz-linear-gradient(20deg, transparent 96%, $base-dark 10%);
+            background: linear-gradient(20deg, transparent 96%, $base-dark 10%);
+        }
+    }
+
+    h2, p {
+        padding-left: 13px;
+        padding-right: 13px;
+
+        @media screen and (max-width: 1594px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    h2 {
+        padding-bottom: 20px;
+    }
+
+    p {
+        text-align: justify;
+
+        @media screen and (max-width: 700px) {
+            text-align: left;
+        }
+    }
+
+    .tech--icon--list {
+        margin-top: 60px;
+        padding-right: 13px;
+        padding-bottom: 150px;
+        float: right;
+
+        @media screen and (max-width: 1594px) {
+            margin-top: 30px;
+            padding-right: 0;
+        }
+
+        @media screen and (max-width: 930px) {
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding-bottom: 0;
+            float: inherit;
+            text-align: left;
+        }
+
+        li {
+            @extend .floating;
+            padding-left: 20px;
+            @include font-size(3, 3);
+            color: rgba($darker, 0.25);
+            @extend .fade--logos;
+
+            @media screen and (max-width: 930px) {
+                @include font-size(2, 2);
+            }
+
+            @media screen and (max-width: 700px) {
+                padding: 0 20px 20px 0 !important;
+            }
+
+            &:nth-child(4) {
+                @include font-size(4, 3);
+                margin-top: -4px;
+                padding-left: 25px;
+
+                @media screen and (max-width: 930px) {
+                    margin-top: -2px;
+                    @include font-size(2.5, 2);
+                }
+            }
+
+            &:nth-child(10) {
+                @include font-size(3.5, 3);
+                margin-top: 2px;
+                padding-left: 25px;
+
+                @media screen and (max-width: 930px) {
+                    @include font-size(2.5, 2);
+                }
+            }
+
+            &:nth-child(11),
+            &:nth-child(12),
+            &:nth-child(13) {
+                @include font-size(3.5, 3);
+                margin-top: -4px;
+
+                @media screen and (max-width: 930px) {
+                    @include font-size(2.5, 2);
+                }
+            }
+            
+            &:nth-child(5),
+            &:nth-child(11),
+            &:nth-child(12) {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .container:hover {
+
+        .tech--icon--list li {
+    
+            &:nth-child(1) {
+                color: #e34f26;
+                @include transitions(all 1s ease-in-out 0s);
+            }
+
+            &:nth-child(2) {
+                color: #007dc6;
+                @include transitions(all 1s ease-in-out .2s);
+            }
+
+            &:nth-child(3) {
+                color: #563e7c;
+                @include transitions(all 1s ease-in-out .4s);
+            }
+            
+            &:nth-child(4) {
+                color: #f0db4f;
+                @include transitions(all 1s ease-in-out .6s);
+            }
+
+            &:nth-child(5) {
+                color: #0b68ad;
+                @include transitions(all 1s ease-in-out .8s);
+            }
+
+            &:nth-child(6) {
+                color: #ffb13b;
+                @include transitions(all 1s ease-in-out 1s);
+            }
+
+            &:nth-child(7) {
+                color: #0ad7ff;
+                @include transitions(all 1s ease-in-out 1.2s);
+            }
+
+            &:nth-child(8) {
+                color: #ea4817;
+                @include transitions(all 1s ease-in-out 1.4s);
+            }
+
+            &:nth-child(9) {
+                color: #1e8cbe;
+                @include transitions(all 1s ease-in-out 1.6s);
+            }
+
+            &:nth-child(10) {
+                color: #8792bf;
+                @include transitions(all 1s ease-in-out 1.8s);
+            }
+
+            &:nth-child(11) {
+                color: #e84c50;
+                @include transitions(all 1s ease-in-out 2s);
+            }
+
+            &:nth-child(12) {
+                color: #68b445;
+                @include transitions(all 1s ease-in-out 2.2s);
+            }
+
+            &:nth-child(13) {
+                color: #e3e3e3;
+                @include transitions(all 1s ease-in-out 2.4s);
+            }
+        }
+    }
+}

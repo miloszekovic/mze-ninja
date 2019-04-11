@@ -1,0 +1,195 @@
+/* About */
+.about--wrapper {
+    background: -webkit-linear-gradient(115deg, $dark 75%, $darker 25%);
+    background: -o-linear-gradient(115deg, $dark 75%, $darker 25%);
+    background: -moz-linear-gradient(115deg, $dark 75%, $darker 25%);
+    background: linear-gradient(115deg, $dark 75%, $darker 25%);
+
+    @include animations(content-blur .5s);
+
+    section {
+        background: -webkit-linear-gradient(105deg, transparent 95%, $base-dark 5%);
+        background: -o-linear-gradient(105deg, transparent 95%, $base-dark 5%);
+        background: -moz-linear-gradient(105deg, transparent 95%, $base-dark 5%);
+        background: linear-gradient(105deg, transparent 95%, $base-dark 5%);
+
+        @media screen and (max-width: 1080px) {
+            background: -webkit-linear-gradient(15deg, transparent 95%, $darker 5%);
+            background: -o-linear-gradient(15deg, transparent 95%, $darker 5%);
+            background: -moz-linear-gradient(15deg, transparent 95%, $darker 5%);
+            background: linear-gradient(15deg, transparent 95%, $darker 5%);
+        }
+    }
+
+    .icon--wrapp {
+        width: $full / 2;
+        text-align: center;
+        margin: 25px 0 10px;
+
+        @media screen and (max-width: 1380px) {
+            width: 60%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 750px) {
+            width: 180px;
+        }
+
+        i {
+            @include font-size(3.5, 3.5);
+            margin: 0 10px;
+        }
+
+        a {
+            &:nth-child(1) {
+                color: #2eadef;
+
+                &:hover {
+                    color: #0077b5;
+                }
+            }
+
+            &:nth-child(2) {
+                color: #ffc100;
+
+                &:hover {
+                    color: #fbcc3a;
+                }
+            }
+        }
+    }
+
+    .img--wrapp {
+        width: $full / 2;
+        line-height: 0;
+
+        @media screen and (max-width: 1380px) {
+            width: 60%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 750px) {
+            width: 180px;
+        }
+
+        img {
+            @extend .img;
+            @include rounded--corners(100%);
+            color: $dark;
+            box-shadow: 0 6px 5px -5px $base-dark;
+        }
+    }
+
+    article {
+        @extend .floating;
+
+        @media screen and (max-width: 750px) {
+            display: block;
+            width: $full !important;
+            padding: 0 !important;
+        }
+    }
+    
+    article.content,
+    article.about--site--wraper {
+        width: $full / 3 + $full / 3;
+        padding-right: 50px;
+        text-align: justify;
+
+        @media screen and (max-width: 1380px) {
+            padding-right: 30px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding-right: 25px;
+        }
+
+        @media screen and (max-width: 700px) {
+            text-align: left;
+        }
+
+        .icon--wrapp,
+        .img--wrapp {
+            display: none;
+
+            @media screen and (max-width: 750px) {
+                display: block;
+            }
+        }
+
+        .icon--wrapp {
+            margin-bottom: 20px;
+        }
+
+        .img--wrapp {
+            margin-top: 20px;
+        }
+    }
+
+    article.sidebar {
+        padding-left: 50px;
+        width: $full / 3;
+        margin-top: -120px;
+
+        @media screen and (max-width: 1380px) {
+            padding-left: 30px;
+            margin-top: -100px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding-left: 25px;
+        }
+
+        @media screen and (max-width: 1080px) {
+            margin-top: -80px;
+        }
+
+        @media screen and (max-width: 750px) {
+            margin-top: 0;
+
+            .icon--wrapp,
+            .img--wrapp {
+                display: none;
+            }
+        }
+
+        h4 {
+            color: rgba($light, .7);
+        }
+        
+        p {
+            color: rgba($light, .6);
+        }
+
+        p {
+            @include font-size(1.4, 3.4);
+        }
+    }
+
+    article.about--site--wraper {
+        margin-top: 50px;
+
+        @media screen and (max-width: 1080px) {
+            margin-top: 35px;
+            display: block;
+            width: $full !important;
+            padding: 0 !important;
+        }
+
+        .about--site {
+            background: $base-light;
+            color: $dark;
+            padding: 5px 30px;
+        }
+
+        p {
+            @include font-size(1.4, 2.6);
+        }
+    }
+}

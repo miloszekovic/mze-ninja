@@ -1,0 +1,200 @@
+/* global */
+html, 
+body,
+div#root,
+div#main--app--screen,
+div#main--screen {
+    height: $full;
+    min-height: $full;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $dark;
+    color: $light;
+    @include font-size(1.8, 3.4);
+
+    @media screen and (max-width: 1080px) {
+        @include font-size(1.5, 2.8);
+    }
+}
+
+body, 
+body *,
+input, 
+textarea,
+select {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+a { 
+    color: $base-light;
+    text-decoration: none;
+    
+    &:hover {
+        color: $light;
+        @extend .hov;
+    }
+    
+    &:active {
+        @extend .act;
+    }
+
+    &:focus {
+        outline: 0;
+        border: 0;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-weight: 700;
+    @include font-size(7.5, 8);
+    margin-bottom: 40px;
+
+    strong {
+        @extend .gradient;
+        @extend .gradient--title;
+        @extend .text--gradient;
+
+        i {
+            font-style: normal;
+
+            @media screen and (max-width: 470px) {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1880px) {
+        @include font-size(6.5, 7);
+    }
+
+    @media screen and (max-width: 1080px) {
+        @include font-size(5, 5.5);
+        margin-bottom: 35px;
+    }
+
+    @media screen and (max-width: 580px) {
+        @include font-size(3.8, 4.5);
+        margin-bottom: 30px;
+    }
+}
+
+h2 {
+    @include font-size(3.5, 4);
+
+    @media screen and (max-width: 1880px) {
+        @include font-size(3, 3.5);
+    }
+
+    @media screen and (max-width: 1080px) {
+        @include font-size(2.5, 3);
+    }
+}
+
+h3, h4 {
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+h4 {
+    padding-bottom: 5px;
+}
+
+p {
+    padding-bottom: 20px;
+
+    &.big {
+        @include font-size(2.2, 4.8);
+
+        @media screen and (max-width: 1080px) {
+            @include font-size(1.8, 4);
+        }
+    }
+}
+
+.fancy {
+    @extend .gradient;
+    @extend .text--gradient;
+    padding-bottom: 3px;
+    position: relative;
+    font-weight: bold;
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 9999;
+        bottom: -3px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        @extend .gradient;
+        @extend .opacity--grad;
+    }
+}
+
+button {
+    padding: 0;
+    @include font-size(2.2, 3.2);
+
+    &:hover {
+        @extend .hov;
+    }
+    
+    &:active {
+        @extend .act;
+    }
+
+    &:focus {
+        outline: 0;
+        border: 0;
+    }
+}
+
+/* custom scrollbar */
+.scrollarea.area {
+    height: $full !important;
+    min-height: $full !important;
+}
+.scrollarea .scrollbar-container:hover {
+    background: $base-dark !important;
+}
+
+/* layout */
+section {
+    height: $full;
+    min-height: $full;
+    width: $full;
+    position: relative;
+    z-index: 111;
+
+    section {
+        height: $full;
+        min-height: $full;
+        width: $full;
+    }
+
+    .container {
+        margin: $center;
+        width: 70%;
+        padding: 6% 0 150px 80px;
+
+        @media screen and (max-width: 1080px) {
+            width: 74%;
+            padding-left: 0;
+        }
+
+        @media screen and (max-width: 580px) {
+            padding-bottom: 110px;
+            padding-top: 11%;
+        }
+    }
+}

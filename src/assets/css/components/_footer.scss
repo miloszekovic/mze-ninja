@@ -1,0 +1,32 @@
+/* footer */
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: $full;
+    padding-bottom: 22px;
+    color: rgba($base-light, .8);
+    @include font-size(1.1, 1.8);
+    
+    @media screen and (max-width: 1080px) {
+        width: $fixH;
+        right: 5px;
+        z-index: 999;
+    }
+
+    @media screen and (max-width: 590px) {
+        display: none;
+    }
+
+    a { 
+        color: $dark;
+        padding-bottom: 2px;
+        border-bottom: 2px solid rgba($base-light, .7);
+        @include font-size(1, 1.8);
+        font-weight: bold;
+
+        &:hover {
+            border-bottom: 2px solid rgba($base-mid, 1);
+        }
+    }
+}
