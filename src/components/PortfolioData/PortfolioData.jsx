@@ -10,28 +10,33 @@ function PortfolioData() {
   
   return (
     <div>
-      {loading ? (
-        "Loading ..."
+      { loading ? (
+        /* 'Loading ...' */
+        <div className="sk-double-bounce">
+          <div className="sk-child sk-double-bounce1"></div>
+          <div className="sk-child sk-double-bounce2"></div>
+        </div>
       ) : (
-        <ul>
-          {data.map(({ id, name, type, desc, year, credit, url, urlName, img }) => (
-            <li key={`portfolio-${id}`}>
-              <article>
-                <div>
-                  <span>
-                    <h2><strong>{name}</strong> {type}</h2>
-                    <h3>{desc}</h3>
-                    <p>{year}<i></i>{credit}<i></i><a href={url} target="_blank" rel="noopener noreferrer nofollow">{urlName}</a></p>
-                  </span>
-                </div>
-                <LazyLoadImage effect="blur" alt={name} src={img} />
-              </article>
-            </li>
-          ))}
-        </ul>
+      <ul>
+        {data.map(({ id, name, type, desc, year, credit, url, urlName, img }) => (
+          <li key={`portfolio-${id}`}>
+            <article>
+              <div>
+                <span>
+                  <h2><strong>{name}</strong> {type}</h2>
+                  <h3>{desc}</h3>
+                  <p>{year}<i></i>{credit}<i></i><a href={url} target="_blank" rel="noopener noreferrer nofollow">{urlName}</a></p>
+                </span>
+              </div>
+              <LazyLoadImage effect="blur" alt={name} src={img} />
+            </article>
+          </li>
+        ))}
+      </ul>
       )}
     </div>
   );
+
 }
 
 export default PortfolioData
