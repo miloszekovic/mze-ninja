@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 import AboutSidebar from './AboutSidebar'
 import 'react-lazy-load-image-component/src/effects/blur.css'
-import PicAbout from '../assets/img/content/about-me-v2.jpg'
+import PicAbout from '../assets/img/content/about-me.jpg'
 
 class About extends Component {
   render() {

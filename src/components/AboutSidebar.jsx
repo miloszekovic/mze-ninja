@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import 'react-lazy-load-image-component/src/effects/blur.css'
-import PicAbout from '../assets/img/content/about-me-v2.jpg'
+import PicAbout from '../assets/img/content/about-me.jpg'
 
 class AboutSidebar extends Component {
   render() {
