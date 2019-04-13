@@ -5,7 +5,7 @@
     "type": "site",
     "desc": "UX/UI Frontend WordPress",
     "year": 2018,
-    "credit": "by: Evitbe",
+    "credit": "",
     "url": "http://www.atos-vrata.rs/",
     "urlName": "Atos-vrata.rs",
     "img": "http://mze.ninja/data/img/atos-vrata.jpg"
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "name": "Zla Zla Shop",
-    "type": "ecommerce",
+    "type": "e-commerce",
     "desc": "Frontend / UI",
     "year": 2016,
     "credit": "",
@@ -130,5 +130,16 @@
     "url": "http://www.zonaii.com/",
     "urlName": "Zonaii.com",
     "img": "http://mze.ninja/data/img/zonaii.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Madness",
+    "type": "e-commerce",
+    "desc": "UX/UI Frontend",
+    "year": 2009,
+    "credit": "",
+    "url": "http://www.madness.rs/",
+    "urlName": "Madness.rs",
+    "img": "http://mze.ninja/data/img/madness.jpg"
   }
 ]
