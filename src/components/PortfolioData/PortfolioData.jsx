@@ -12,9 +12,10 @@ function PortfolioData() {
     <div>
       { loading ? (
         /* 'Loading ...' */
-        <div className="sk-double-bounce">
-          <div className="sk-child sk-double-bounce1"></div>
-          <div className="sk-child sk-double-bounce2"></div>
+        <div class="sk-three-bounce">
+          <div class="sk-child sk-bounce1"></div>
+          <div class="sk-child sk-bounce2"></div>
+          <div class="sk-child sk-bounce3"></div>
         </div>
       ) : (
       <ul>
