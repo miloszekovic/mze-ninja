@@ -32,7 +32,12 @@
     }
 
     h2 {
-        padding-bottom: 20px;
+        padding-bottom: 25px;
+        text-transform: none;
+
+        span {
+            color: rgba($light, .25);
+        }
     }
 
     p {

@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom'
 import ScrollArea from 'react-scrollbar'
 import Helmet from 'react-helmet'
 
-const textArray = ['eat', 'sleep', 'drink', 'snore', 'foo', 'buzz', 'whatever']
+const helloArray = ['amiko', 'friend', '友達', 'друже', 'prieten', 'freund', 'hoa', 'друг', 'venn', 'amigo', 'sõber', 'φίλος', 'vän', 'मित्र']
 
 class Home extends Component {
 
   constructor() {
     super();
-    this.state = { textIdx: 0 }
+    this.state = { helloIndex: 0 }
   }
 
   componentDidMount() {
     this.timeout = setInterval(() => {
-      let currentIdx = this.state.textIdx;
-      this.setState({ textIdx: currentIdx + 1 })
-    }, 100)
+      let currentIndex = this.state.helloIndex;
+      this.setState({ helloIndex: currentIndex + 1 })
+    }, 500)
   }
 
   componentDidUnmount() {
@@ -24,7 +24,7 @@ class Home extends Component {
   }
 
   render() {
-    let textThatChanges = textArray[this.state.textIdx % textArray.length]
+    let textThatChanges = helloArray[this.state.helloIndex % helloArray.length]
 
     return (
       <section className="home--wrapper">
@@ -44,7 +44,7 @@ class Home extends Component {
             <div className="container">
 
               <h1>Web <strong>design</strong> and <strong>dev<i>elopment</i></strong></h1>
-              <h2><strong>Hello</strong> {textThatChanges}</h2>
+              <h2><strong>Hello</strong> <span>{textThatChanges}</span></h2>
               <p>My name is <strong>Miloš Zeković</strong>, and I'm an IT engineer, creative <strong>UI designer</strong> and <strong>Front-end</strong> / <strong>UI developer</strong> with <i>7+</i> years of professional experience, based in <a href="https://goo.gl/maps/q91qjK4JUBP2" rel="noopener noreferrer" target="_blank">Belgrade RS</a>. I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences and web app's.</p>
               <p>When I do not play in the code then I certainly play old arcade video games or I'm on tatami where I practice moves from my favorite martial arts <strong>Krav Maga</strong> and <strong>BJJ</strong>.</p>
               <p>Find out more <Link className="fancy" to="/about">about me</Link>, look at my <Link className="fancy" to="/portfolio">portfolio</Link> and <Link className="fancy" to="/contact">contact me</Link> we can have a project, or beer, or both.</p>
