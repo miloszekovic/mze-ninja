@@ -85,7 +85,7 @@ class Home extends Component {
 
         </section>
       </section>
-    );
+    )
   }
 }
 

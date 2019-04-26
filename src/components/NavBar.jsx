@@ -52,7 +52,7 @@ class NavBar extends Component {
         </nav>
         <Footer />
       </aside>
-    );
+    )
   }
 }
 

@@ -42,7 +42,7 @@ class Contact extends Component {
 
         </section>
       </section>
-    );
+    )
   }
 }
 

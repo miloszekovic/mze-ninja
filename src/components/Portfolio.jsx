@@ -30,7 +30,7 @@ class Portfolio extends Component {
 
         </section>
       </section>
-    );
+    )
   }
 }
 

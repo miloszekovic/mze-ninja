@@ -24,15 +24,31 @@
     .container {
 
         ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "portfolio-1 portfolio-1 portfolio-2" 
+                "portfolio-1 portfolio-1 portfolio-3" 
+                "portfolio-4 portfolio-5 portfolio-6" 
+                "portfolio-7 portfolio-8 portfolio-9" 
+                "portfolio-10 portfolio-11 portfolio-11" 
+                "portfolio-12 portfolio-11 portfolio-11" 
+                "portfolio-13 portfolio-14 portfolio-15"
+            ;
+            grid-gap: 10px 10px;
+
+            @media screen and (max-width: 1440px) {
+                display: block;
+            }
 
             li {
                 line-height: 0;
-                padding: 0 10px 10px 0;
-                width: $full / 3;
-                @extend .floating;
 
                 @media screen and (max-width: 1440px) {
                     width: $full / 2;
+                    padding: 0 10px 10px 0;
+                    display: inline-block;
                 }
 
                 @media screen and (max-width: 900px) {
@@ -42,16 +58,83 @@
                     padding-bottom: 30px;
                 }
 
+                &:nth-child(1) { 
+                    grid-area: portfolio-1; 
+                }
+
+                &:nth-child(2) { 
+                    grid-area: portfolio-2; 
+                }
+
+                &:nth-child(3) { 
+                    grid-area: portfolio-3; 
+                }
+
+                &:nth-child(4) { 
+                    grid-area: portfolio-4; 
+                }
+
+                &:nth-child(5) { 
+                    grid-area: portfolio-5; 
+                }
+
+                &:nth-child(6) { 
+                    grid-area: portfolio-6;
+                }
+
+                &:nth-child(7) { 
+                    grid-area: portfolio-7; 
+                }
+
+                &:nth-child(8) { 
+                    grid-area: portfolio-8; 
+                }
+
+                &:nth-child(9) { 
+                    grid-area: portfolio-9; 
+                }
+
+                &:nth-child(10) { 
+                    grid-area: portfolio-10; 
+                }
+
+                &:nth-child(11) { 
+                    grid-area: portfolio-11; 
+                }
+
+                &:nth-child(12) { 
+                    grid-area: portfolio-12; 
+                }
+
+                &:nth-child(13) { 
+                    grid-area: portfolio-13; 
+                }
+
+                &:nth-child(14) { 
+                    grid-area: portfolio-14; 
+                }
+
+                &:nth-child(15) { 
+                    grid-area: portfolio-15;
+                }
+
                 article {
                     overflow: hidden;
                     position: relative;
+                    height: $full;
+
+                    span {
+                        width: $full;
+                        height: $full;
+                    }
                 }
 
                 img {
-                    @extend .img;
                     position: relative;
                     z-index: 44;
                     color: $dark;
+                    width: $full;
+                    height: $full;
                 }
 
                 div {
@@ -75,6 +158,8 @@
                         z-index: -1;
                         background: rgba($dark, 0.9);
                         padding: 25px 30px;
+                        width: auto;
+                        height: auto;
 
                         @media screen and (min-width: 1081px) {
                             top: -1px;
@@ -154,24 +239,6 @@
                             -webkit-transform: scaleX(1);
                             transform: scaleX(1);
                         }
-                    }
-                }
-
-                &:nth-child(1),
-                &:nth-child(10) {
-                    width: $full / 3 + $full / 3;
-
-                    @media screen and (max-width: 1440px) {
-                        width: $full / 2;
-                    }
-
-                    @media screen and (max-width: 900px) {
-                        width: $full;
-                    }
-
-                    span {
-                        width: $full;
-                        margin-left: 1px;
                     }
                 }
             }

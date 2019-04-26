@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import ScrollArea from 'react-scrollbar'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Helmet from 'react-helmet'
 
 import AboutSidebar from './AboutSidebar'
-import 'react-lazy-load-image-component/src/effects/blur.css'
-import PicAbout from '../assets/img/content/about-me.jpg'
+import AboutMilos from './AboutMilos'
 
 class About extends Component {
   render() {
@@ -30,13 +28,7 @@ class About extends Component {
 
               <article className="content">
                 <p>My name is <strong>Miloš Zeković</strong>, and I'm an IT engineer, creative <strong>UI designer</strong> and <strong>Front-end</strong> / <strong>UI developer</strong> with <i>7+</i> years of professional experience, based in <a href="https://goo.gl/maps/q91qjK4JUBP2" rel="noopener noreferrer" target="_blank">Belgrade RS</a>.</p>
-                <div className="img--wrapp">
-                  <LazyLoadImage effect="blur" alt="Miloš Zeković - Front-end developer / UX/UI designer" src={PicAbout} />
-                </div>
-                <div className="icon--wrapp">
-                  <a href="http://tiny.cc/efcluy" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="https://github.com/miloszekovic" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                </div>
+                <AboutMilos />
                 <p>I have dealt with the <strong>web design</strong>, with the focus on web standards and <strong>UX</strong>, since <i>2004</i>. I created or helped with the creation of hundreds different web sites, portals and applications as a web designer, developer or web consultant. I create modern, and yet simple and most of all effective web sites with semantic, valid and SEO friendly code. Lately, I have been focused on <strong>UI design and HTML5 / CSS3 / JS coding and responsive pages</strong>. I became interested in <strong>web design</strong> in 2002 when I made the first <i>HTML page</i>.</p>
                 <p>My work was presented by many relevant CSS design galleries such as the famous <a href="http://www.cssmania.com/" target="_blank" rel="noopener noreferrer">CssMania</a>, and it was reviewed positively on many relevant blogs. In my present career I worked with many important individuals and web design studios form Belgrade (also for Serbian Government) and World Wide.</p>
                 <p>I can work closely with Designers and Back-end engineers, as a sole Front-end / UI or in <strong>Agile</strong> teams.</p>
@@ -58,7 +50,7 @@ class About extends Component {
     
         </section>
       </section>
-    );
+    )
   }
 }
 

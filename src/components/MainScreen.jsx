@@ -24,7 +24,7 @@ class MainScreen extends Component {
           </Switch>
         </div>
       </Router>
-    );
+    )
   }
 }
 

@@ -30,7 +30,7 @@ class Message extends Component {
 
         </section>
       </section>
-    );
+    )
   }
 }
 

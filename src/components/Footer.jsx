@@ -7,7 +7,7 @@ class Footer extends Component {
       <footer>
         &copy; {new Date().getFullYear()}<br /><Link to="/">MZE.NINJA</Link>
       </footer>
-    );
+    )
   }
 }
 
