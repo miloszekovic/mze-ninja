@@ -16,10 +16,11 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## 8 - integracija Gmail apija za formu
 ## 9 - loading aplikacije (ili makar content deo)
 ## 10 - portfolio sekciju prebaciti u cssgrid
-## 11 - dodati madness i seb i portfolio
+## 11 - dodati madness i seb u portfolio
 ## 12 - na dnu naslovne ubaciti github link
 ## 13 - osmisliti toggle checkbox za prebacivanje na light theme
 ## 14 - kreirati light theme
+## 15 - hello words animation
 
 ## Table of Contents
 
