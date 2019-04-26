@@ -60,8 +60,9 @@ class Home extends Component {
               <h1>Web <strong>design</strong> and <strong>dev<i>elopment</i></strong></h1>
               <h2><strong>Hello</strong> <span dangerouslySetInnerHTML={ {__html: textThatChanges} } /></h2>
               <p>My name is <strong>Miloš Zeković</strong>, and I'm an IT engineer, creative <strong>UI designer</strong> and <strong>Front-end</strong> / <strong>UI developer</strong> with <i>7+</i> years of professional experience, based in <a href="https://goo.gl/maps/q91qjK4JUBP2" rel="noopener noreferrer" target="_blank">Belgrade RS</a>. I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences and web app's.</p>
-              <p>When I do not play in the code then I certainly play old arcade video games or I'm on tatami where I practice moves from my favorite martial arts <strong>Krav Maga</strong> and <strong>BJJ</strong>.</p>
+              <p>When I do not play in the code, then I certainly play old arcade video games, or I'm on tatami where I practice moves from my favorite martial arts <strong>Krav Maga</strong> and <strong>BJJ</strong>.</p>
               <p>Find out more <Link className="fancy" to="/about">about me</Link>, look at my <Link className="fancy" to="/portfolio">portfolio</Link> and <Link className="fancy" to="/contact">contact me</Link> we can have a project, or beer, or both.</p>
+              <p>And yes, you can check my <a href="https://github.com/miloszekovic" target="_blank" rel="noopener noreferrer">GitHub</a> page also.</p>
               
               <ul className="tech--icon--list">
                 <li><i className="icon-html5-alt"></i></li>

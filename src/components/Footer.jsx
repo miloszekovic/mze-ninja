@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        &copy; {new Date().getFullYear()}<br /><Link to="/">MZE.NINJA</Link>
+        <p>&copy; {new Date().getFullYear()}<br /><Link to="/">mze.ninja</Link></p>
       </footer>
     )
   }
