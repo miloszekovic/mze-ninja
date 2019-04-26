@@ -34,7 +34,7 @@ class About extends Component {
                 <p>I can work closely with Designers and Back-end engineers, as a sole Front-end / UI or in <strong>Agile</strong> teams.</p>
                 <h3>So, are you some perfectionist?</h3>
                 <p><strong>Right!</strong> The design I make, together with HTML / CSS / JS code, is one “pixel precise” unit. In my opinion, if there is no perfectionism, there is no quality.</p>
-                <p>When I do not play in the code then I certainly play old arcade video games or I'm on tatami where I practice moves from my favorite martial arts <strong>Krav Maga</strong> and <strong>BJJ</strong>.</p>
+                <p>When I do not play in the code, then I certainly play old arcade video games, or I'm on tatami where I practice moves from my favorite martial arts <strong>Krav Maga</strong> and <strong>BJJ</strong>.</p>
               </article>
               <AboutSidebar />
               <article className="about--site--wraper">
