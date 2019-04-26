@@ -35,8 +35,9 @@
         padding-bottom: 25px;
         text-transform: none;
 
-        span {
-            color: rgba($light, .25);
+        i {
+            font-style: normal;
+            @include animations(content-blur .35s);
         }
     }
 
@@ -85,7 +86,7 @@
             }
 
             &:nth-child(4) {
-                @include font-size(4, 3);
+                @include font-size(3.8, 3);
                 margin-top: -4px;
                 padding-left: 25px;
 
@@ -96,18 +97,16 @@
             }
 
             &:nth-child(10) {
-                @include font-size(3.5, 3);
-                margin-top: 2px;
-                padding-left: 25px;
+                @include font-size(3, 2);
+                padding-left: 20px;
 
                 @media screen and (max-width: 930px) {
-                    @include font-size(2.5, 2);
+                    @include font-size(2, 2);
                 }
             }
 
             &:nth-child(11),
-            &:nth-child(12),
-            &:nth-child(13) {
+            &:nth-child(12) {
                 @include font-size(3.5, 3);
                 margin-top: -4px;
 
@@ -115,11 +114,22 @@
                     @include font-size(2.5, 2);
                 }
             }
+
+            &:nth-child(13) {
+                @include font-size(3, 2);
+
+                @media screen and (max-width: 930px) {
+                    @include font-size(2, 2);
+                }
+            }
             
             &:nth-child(5),
-            &:nth-child(11),
-            &:nth-child(12) {
+            &:nth-child(11) {
                 padding-left: 15px;
+            }
+
+            &:nth-child(12) {
+                padding-left: 10px;
             }
         }
     }
@@ -164,7 +174,7 @@
             }
 
             &:nth-child(8) {
-                color: #ea4817;
+                color: #41b883;
                 @include transitions(all 1s ease-in-out 1.4s);
             }
 
@@ -174,7 +184,7 @@
             }
 
             &:nth-child(10) {
-                color: #8792bf;
+                color: #cd6799;
                 @include transitions(all 1s ease-in-out 1.8s);
             }
 
@@ -189,7 +199,7 @@
             }
 
             &:nth-child(13) {
-                color: #e3e3e3;
+                color: #408bfa;
                 @include transitions(all 1s ease-in-out 2.4s);
             }
         }

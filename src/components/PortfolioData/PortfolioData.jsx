@@ -19,20 +19,22 @@ function PortfolioData() {
         </div>
       ) : (
       <ul>
-        {data.map(({ id, name, type, desc, year, credit, url, urlName, img }) => (
-          <li key={`portfolio-${id}`}>
-            <article>
-              <div>
-                <span>
-                  <h2><strong>{name}</strong> {type}</h2>
-                  <h3>{desc}</h3>
-                  <p>{year}<i></i>{credit}<i></i><a href={url} target="_blank" rel="noopener noreferrer nofollow">{urlName}</a></p>
-                </span>
-              </div>
-              <LazyLoadImage effect="blur" alt={name} src={img} />
-            </article>
-          </li>
-        ))}
+        {
+          data.map(({ id, name, type, desc, year, url, urlName, img }) => (
+            <li key={`portfolio-${id}`}>
+              <article>
+                <div>
+                  <span>
+                    <h2><strong>{name}</strong> {type}</h2>
+                    <h3 dangerouslySetInnerHTML={ {__html: desc} }></h3>
+                    <p>{year}<i></i><a href={url} target="_blank" rel="noopener noreferrer nofollow">{urlName}</a></p>
+                  </span>
+                </div>
+                <LazyLoadImage effect="blur" alt={name} src={img} />
+              </article>
+            </li>
+          ))
+        }
       </ul>
       )}
     </div>
