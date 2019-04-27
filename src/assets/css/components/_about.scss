@@ -165,9 +165,6 @@
         
         p {
             color: rgba($light, .6);
-        }
-
-        p {
             @include font-size(1.4, 3.4);
         }
     }
@@ -190,6 +187,33 @@
 
         p {
             @include font-size(1.4, 2.6);
+        }
+    }
+}
+
+/* Light Theme */
+body[data-theme="light"] {
+
+    .about--wrapper {
+        background: -webkit-linear-gradient(115deg, $light 75%, $darker-light 25%);
+        background: -o-linear-gradient(115deg, $light 75%, $darker-light 25%);
+        background: -moz-linear-gradient(115deg, $light 75%, $darker-light 25%);
+        background: linear-gradient(115deg, $light 75%, $darker-light 25%);
+
+        .img--wrapp img {
+            color: $light;
+            box-shadow: 0 6px 5px -5px $dark;
+        }
+
+        article.sidebar {
+    
+            h4 {
+                color: rgba($dark, .8);
+            }
+            
+            p {
+                color: rgba($dark, .7);
+            }
         }
     }
 }

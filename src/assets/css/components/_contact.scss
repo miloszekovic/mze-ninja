@@ -100,3 +100,28 @@
         }
     }
 }
+
+/* Light Theme */
+body[data-theme="light"] {
+
+    .contact--wrapper {
+        background: -webkit-linear-gradient(260deg, $light 65%, $darker-light 35%);
+        background: -o-linear-gradient(260deg, $light 65%, $darker-light 35%);
+        background: -moz-linear-gradient(260deg, $light 65%, $darker-light 35%);
+        background: linear-gradient(260deg, $light 65%, $darker-light 35%);
+
+        @media screen and (max-width: 1080px) {
+            background: -webkit-linear-gradient(200deg, $light 65%, $darker-light 35%);
+            background: -o-linear-gradient(200deg, $light 65%, $darker-light 35%);
+            background: -moz-linear-gradient(200deg, $light 65%, $darker-light 35%);
+            background: linear-gradient(200deg, $light 65%, $darker-light 35%);
+        }
+
+        #contact ul li {
+                        
+            input, textarea {
+                color: $darker;
+            }
+        }
+    }
+}

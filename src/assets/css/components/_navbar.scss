@@ -362,3 +362,31 @@ aside {
         }
     }
 }
+
+/* Light Theme */
+body[data-theme="light"] {
+
+    aside {
+        
+        article {
+            background: $light;
+
+            a, a:hover, a:active {
+                @extend .opacity--reset;
+            }
+        }
+
+        nav ul li {
+
+            &:nth-child(1) .active div,
+            &:nth-child(4) .active div {
+                background: $darker-light;
+            }
+
+            &:nth-child(2) .active div,
+            &:nth-child(3) .active div {
+                background: $light;
+            }
+        }
+    }
+}

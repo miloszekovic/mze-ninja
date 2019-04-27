@@ -49,3 +49,11 @@
         } 
     }
 }
+
+/* Light Theme */
+body[data-theme="light"] {
+
+    .sk-three-bounce .sk-child {
+        background: $darker-light;
+    }
+}

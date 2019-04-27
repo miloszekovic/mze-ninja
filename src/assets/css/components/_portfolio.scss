@@ -245,3 +245,22 @@
         }
     }
 }
+
+/* Light Theme */
+body[data-theme="light"] {
+
+    .portfolio--wrapper {
+        background: -webkit-linear-gradient(-197deg, $light 65%, $darker-light 35%);
+        background: -o-linear-gradient(-197deg, $light 65%, $darker-light 35%);
+        background: -moz-linear-gradient(-197deg, $light 65%, $darker-light 35%);
+        background: linear-gradient(-197deg, $light 65%, $darker-light 35%);
+
+        .container ul li div {
+            background: rgba($light, 0.2);
+
+            span {
+                background: rgba($light, 0.9);
+            }
+        }
+    }
+}

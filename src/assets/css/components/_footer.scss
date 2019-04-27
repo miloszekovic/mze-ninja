@@ -22,14 +22,21 @@ footer {
         @include font-size(1.1, 1.6);
 
         a { 
-            color: $dark;
+            color: $dark !important;
             padding-bottom: 2px;
             border-bottom: 2px solid rgba($base-light, .7);
             @include font-size(1, 1.8);
             font-weight: bold;
+            display: inline-block;
     
             &:hover {
-                border-bottom: 2px solid rgba($base-mid, 1);
+                @extend .hov;
+                border-bottom: 2px solid rgba($base-light, .5);
+            }
+
+            &:active {
+                @extend .act;
+                border-bottom: 2px solid rgba($base-light, .3);
             }
         }
     }

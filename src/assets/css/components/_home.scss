@@ -74,7 +74,7 @@
             @extend .floating;
             padding-left: 20px;
             @include font-size(3, 3);
-            color: rgba($darker, 0.25);
+            color: rgba($darker, .25);
             @extend .fade--logos;
 
             @media screen and (max-width: 930px) {
@@ -202,6 +202,21 @@
                 color: #408bfa;
                 @include transitions(all 1s ease-in-out 2.4s);
             }
+        }
+    }
+}
+
+/* Light Theme */
+body[data-theme="light"] {
+
+    .home--wrapper {
+        background: -webkit-linear-gradient(215deg, $light 70%, $darker-light 30%);
+        background: -o-linear-gradient(215deg, $light 70%, $darker-light 30%);
+        background: -moz-linear-gradient(215deg, $light 70%, $darker-light 30%);
+        background: linear-gradient(215deg, $light 70%, $darker-light 30%);
+
+        .tech--icon--list li {
+            color: rgba($darker, .03);
         }
     }
 }

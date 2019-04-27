@@ -194,3 +194,19 @@ section {
         }
     }
 }
+
+/* Light Theme */
+body[data-theme="light"] {
+    background: $light;
+    color: $dark;
+
+    a { 
+        color: $base-dark;
+        text-decoration: none;
+        
+        &:hover {
+            color: $base-dark;
+            @extend .hov;
+        }
+    }
+}
