@@ -308,7 +308,8 @@ aside {
                     }
                 }
 
-                .nav--button-active {
+                .nav--button-active,
+                .nav--button-light-active {
                     display: none;
                 }
 
@@ -371,12 +372,27 @@ body[data-theme="light"] {
         article {
             background: $light;
 
-            a, a:hover, a:active {
+            a:hover {
                 @extend .opacity--reset;
             }
         }
 
         nav ul li {
+
+            a:hover {
+                @extend .opacity--reset;
+            }
+
+            .active {
+
+                .nav--button-active {
+                    display: none;
+                }
+
+                .nav--button-light-active {
+                    display: block;
+                }
+            }
 
             &:nth-child(1) .active div,
             &:nth-child(4) .active div {
