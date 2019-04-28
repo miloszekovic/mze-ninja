@@ -261,7 +261,7 @@ body[data-theme="light"] {
             span {
                 background: rgba($light, .9);
 
-                @media screen and (max-width: 1081px) {
+                @media screen and (max-width: 1080px) {
                     background: rgba($light, .8);
                 }
             }
