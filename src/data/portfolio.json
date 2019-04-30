@@ -135,8 +135,18 @@
     "type": "e-commerce",
     "desc": "UX/UI<i></i>Front-end",
     "year": 2009,
-    "url": "http://www.madness.rs/",
+    "url": "http://mze.ninja/sites/madness.rs/",
     "urlName": "Madness.rs",
     "img": "http://mze.ninja/data/img/madness.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Vojacka Zvona",
+    "type": "web monograph",
+    "desc": "UX/UI<i></i>Front-end",
+    "year": 2008,
+    "url": "http://mze.ninja/sites/vojackazvona.rs/",
+    "urlName": "Vojackazvona.rs",
+    "img": "http://mze.ninja/data/img/zvona.jpg"
   }
 ]
