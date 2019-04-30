@@ -130,6 +130,36 @@
         .img--wrapp {
             margin-top: 20px;
         }
+
+        ul {
+            padding: 0 0 30px 20px;
+            margin-top: -5px;
+
+            li {
+                padding-bottom: 10px;
+                text-align: left;
+                @include font-size(1.6, 3);
+
+                @media screen and (max-width: 1080px) {
+                    @include font-size(1.4, 2.8);
+                }
+
+                &::before {
+                    content: '\2022';
+                    color: $base-mid;
+                    padding-right: 20px;
+                }
+
+                span {
+                    width: 90%;
+                    @extend .floating;
+
+                    @media screen and (max-width: 769px) {
+                        width: 75%;
+                    }
+                }
+            }
+        }
     }
 
     article.sidebar {
@@ -203,6 +233,10 @@ body[data-theme="light"] {
         .img--wrapp img {
             color: $light;
             box-shadow: 0 6px 5px -5px $dark;
+        }
+
+        article.content ul li::before {
+            color: $base-dark;
         }
 
         article.sidebar {
