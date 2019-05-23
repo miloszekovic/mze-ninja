@@ -42,6 +42,7 @@
         @include box--shadow(0 0 2px 2px rgba($darker, .4));
         cursor: pointer;
         outline: none;
+        @include transitions(all .6s ease-in-out 1.6s);
 
         @media screen and (max-width: 480px) {
             height: 16px;
