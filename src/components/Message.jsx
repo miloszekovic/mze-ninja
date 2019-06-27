@@ -22,7 +22,7 @@ class Message extends Component {
             <div className="container">
 
               <h1><strong>THX!</strong></h1>
-              <p><strong>Thank you 4 your message.</strong> I'll answer you soon ...</p>
+              <p><strong>Thank you 4 you'r message.</strong> I'll answer you soon ...</p>
 
             </div>
 
