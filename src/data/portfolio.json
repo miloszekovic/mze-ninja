@@ -7,7 +7,7 @@
     "year": 2019,
     "url": "https://github.com/miloszekovic/frontend-for-tv-screens-example",
     "urlName": "SEB TV project on GitHub",
-    "img": "http://mze.ninja/data/img/seb-tv.jpg"
+    "img": "https://mze.ninja/data/img/seb-tv.jpg"
   },
   {
     "id": 2,
@@ -15,9 +15,9 @@
     "type": "site",
     "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
     "year": 2018,
-    "url": "http://www.atos-vrata.rs/",
+    "url": "https://www.atos-vrata.rs/",
     "urlName": "Atos-vrata.rs",
-    "img": "http://mze.ninja/data/img/atos-vrata.jpg"
+    "img": "https://mze.ninja/data/img/atos-vrata.jpg"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "year": 2018,
     "url": "https://www.evitbe.com/",
     "urlName": "Evitbe.com",
-    "img": "http://mze.ninja/data/img/evitbe.jpg"
+    "img": "https://mze.ninja/data/img/evitbe.jpg"
   },
   {
     "id": 4,
@@ -35,9 +35,9 @@
     "type": "site",
     "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
     "year": 2017,
-    "url": "http://www.vpbg.rs/",
+    "url": "https://www.vpbg.rs/",
     "urlName": "Vpbg.rs",
-    "img": "http://mze.ninja/data/img/vpbg.jpg"
+    "img": "https://mze.ninja/data/img/vpbg.jpg"
   },
   {
     "id": 5,
@@ -45,9 +45,9 @@
     "type": "site",
     "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
     "year": 2017,
-    "url": "http://www.moldovabridge.com/",
+    "url": "https://www.moldovabridge.com/",
     "urlName": "Moldovabridge.com",
-    "img": "http://mze.ninja/data/img/moldovabridge.jpg"
+    "img": "https://mze.ninja/data/img/moldovabridge.jpg"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "year": 2016,
     "url": "https://moj.pausal.rs/#/login/",
     "urlName": "moj.Pausal.rs",
-    "img": "http://mze.ninja/data/img/pausal.jpg"
+    "img": "https://mze.ninja/data/img/pausal.jpg"
   },
   {
     "id": 7,
@@ -65,9 +65,9 @@
     "type": "site",
     "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
     "year": 2016,
-    "url": "http://www.beyoubefree.rs/",
+    "url": "https://www.beyoubefree.rs/",
     "urlName": "Beyoubefree.rs",
-    "img": "http://mze.ninja/data/img/be-you.jpg"
+    "img": "https://mze.ninja/data/img/be-you.jpg"
   },
   {
     "id": 8,
@@ -75,9 +75,9 @@
     "type": "e-commerce",
     "desc": "Front-end / UI",
     "year": 2016,
-    "url": "http://www.zla-zla.com/zlashtek/",
+    "url": "https://www.zla-zla.com/zlashtek/",
     "urlName": "Zla-zla.com",
-    "img": "http://mze.ninja/data/img/zla-zla.jpg"
+    "img": "https://mze.ninja/data/img/zla-zla.jpg"
   },
   {
     "id": 9,
@@ -85,9 +85,9 @@
     "type": "official site",
     "desc": "UX/UI<i></i>Front-end<i></i>Drupal",
     "year": 2015,
-    "url": "http://www.starapazova.rs/",
+    "url": "https://www.starapazova.rs/",
     "urlName": "Starapazova.rs",
-    "img": "http://mze.ninja/data/img/stara-pazova.jpg"
+    "img": "https://mze.ninja/data/img/stara-pazova.jpg"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "year": 2012,
     "url": "https://www.olivebox.net/",
     "urlName": "Olivebox.net",
-    "img": "http://mze.ninja/data/img/olive-box-web.jpg"
+    "img": "https://mze.ninja/data/img/olive-box-web.jpg"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "year": 2013,
     "url": "https://www.olivebox.net/pricing-signup/",
     "urlName": "Olivebox.net",
-    "img": "http://mze.ninja/data/img/olive-box-app.jpg"
+    "img": "https://mze.ninja/data/img/olive-box-app.jpg"
   },
   {
     "id": 12,
@@ -115,9 +115,9 @@
     "type": "site",
     "desc": "UX/UI<i></i>Front-end<i></i>Drupal",
     "year": 2014,
-    "url": "http://www.svetasrbija.org.rs/",
+    "url": "https://www.svetasrbija.org.rs/",
     "urlName": "Svetasrbija.org.rs",
-    "img": "http://mze.ninja/data/img/sveta-srbija.jpg"
+    "img": "https://mze.ninja/data/img/sveta-srbija.jpg"
   },
   {
     "id": 13,
@@ -125,9 +125,9 @@
     "type": "site",
     "desc": "UX/UI<i></i>Front-end",
     "year": 2010,
-    "url": "http://www.zonaii.com/",
+    "url": "https://www.zonaii.com/",
     "urlName": "Zonaii.com",
-    "img": "http://mze.ninja/data/img/zonaii.jpg"
+    "img": "https://mze.ninja/data/img/zonaii.jpg"
   },
   {
     "id": 14,
@@ -135,9 +135,9 @@
     "type": "e-commerce",
     "desc": "UX/UI<i></i>Front-end",
     "year": 2009,
-    "url": "http://mze.ninja/sites/madness.rs/",
+    "url": "https://mze.ninja/sites/madness.rs/",
     "urlName": "Madness.rs",
-    "img": "http://mze.ninja/data/img/madness.jpg"
+    "img": "https://mze.ninja/data/img/madness.jpg"
   },
   {
     "id": 15,
@@ -145,8 +145,8 @@
     "type": "web monograph",
     "desc": "UX/UI<i></i>Front-end",
     "year": 2008,
-    "url": "http://mze.ninja/sites/vojackazvona.rs/",
+    "url": "https://mze.ninja/sites/vojackazvona.rs/",
     "urlName": "Vojackazvona.rs",
-    "img": "http://mze.ninja/data/img/zvona.jpg"
+    "img": "https://mze.ninja/data/img/zvona.jpg"
   }
 ]
