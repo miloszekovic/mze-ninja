@@ -33,7 +33,7 @@ class Home extends Component {
     }, 1750)
   }
 
-  componentDidUnmount() {
+  componentWillUnmount() {
     clearInterval(this.timeout)
   }
 
