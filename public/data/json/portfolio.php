@@ -5,6 +5,26 @@
     $json = '[
       {
         "id": 1,
+        "name": "Casino Room",
+        "type": "web app",
+        "desc": "UX/UI<i></i>Front-end",
+        "year": "2020",
+        "url": "https://www.casinoroom.com/",
+        "urlName": "Casinoroom.com",
+        "img": "https://mze.ninja/data/img/casinoroom.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Ellmount Gaming",
+        "type": "site",
+        "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
+        "year": "2020",
+        "url": "https://www.ellmountgaming.com/",
+        "urlName": "Ellmountgaming.com",
+        "img": "https://mze.ninja/data/img/ellmount.jpg"
+      },
+      {
+        "id": 3,
         "name": "SEB BANK",
         "type": "TV app",
         "desc": "UX/UI<i></i>Front-end",
@@ -14,7 +34,7 @@
         "img": "https://mze.ninja/data/img/seb-tv.jpg"
       },
       {
-        "id": 2,
+        "id": 4,
         "name": "Atos Vrata",
         "type": "site",
         "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
@@ -24,7 +44,7 @@
         "img": "https://mze.ninja/data/img/atos-vrata.jpg"
       },
       {
-        "id": 3,
+        "id": 5,
         "name": "Evitbe",
         "type": "site",
         "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
@@ -34,7 +54,7 @@
         "img": "https://mze.ninja/data/img/evitbe.jpg"
       },
       {
-        "id": 4,
+        "id": 6,
         "name": "VPBG",
         "type": "site",
         "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
@@ -44,7 +64,7 @@
         "img": "https://mze.ninja/data/img/vpbg.jpg"
       },
       {
-        "id": 5,
+        "id": 7,
         "name": "Moldova bridge",
         "type": "site",
         "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
@@ -54,7 +74,7 @@
         "img": "https://mze.ninja/data/img/moldovabridge.jpg"
       },
       {
-        "id": 6,
+        "id": 8,
         "name": "Pausal",
         "type": "app",
         "desc": "UI development",
@@ -64,7 +84,7 @@
         "img": "https://mze.ninja/data/img/pausal.jpg"
       },
       {
-        "id": 7,
+        "id": 9,
         "name": "BeYou",
         "type": "site",
         "desc": "UX/UI<i></i>Front-end<i></i>WordPress",
@@ -74,7 +94,7 @@
         "img": "https://mze.ninja/data/img/be-you.jpg"
       },
       {
-        "id": 8,
+        "id": 10,
         "name": "Zla Zla Shop",
         "type": "e-commerce",
         "desc": "Front-end / UI",
@@ -84,7 +104,7 @@
         "img": "https://mze.ninja/data/img/zla-zla.jpg"
       },
       {
-        "id": 9,
+        "id": 11,
         "name": "Municipality Stara Pazova",
         "type": "official site",
         "desc": "UX/UI<i></i>Front-end<i></i>Drupal",
@@ -94,7 +114,7 @@
         "img": "https://mze.ninja/data/img/stara-pazova.jpg"
       },
       {
-        "id": 10,
+        "id": 12,
         "name": "Olivebox",
         "type": "site",
         "desc": "UX/UI<i></i>Front-end",
@@ -104,7 +124,7 @@
         "img": "https://mze.ninja/data/img/olive-box-web.jpg"
       },
       {
-        "id": 11,
+        "id": 13,
         "name": "Olivebox",
         "type": "app",
         "desc": "UX/UI<i></i>Front-end",
@@ -114,7 +134,7 @@
         "img": "https://mze.ninja/data/img/olive-box-app.jpg"
       },
       {
-        "id": 12,
+        "id": 14,
         "name": "Saint Serbia Org.",
         "type": "site",
         "desc": "UX/UI<i></i>Front-end<i></i>Drupal",
@@ -124,7 +144,7 @@
         "img": "https://mze.ninja/data/img/sveta-srbija.jpg"
       },
       {
-        "id": 13,
+        "id": 15,
         "name": "Zonaii Italia",
         "type": "site",
         "desc": "UX/UI<i></i>Front-end",
@@ -134,7 +154,7 @@
         "img": "https://mze.ninja/data/img/zonaii.jpg"
       },
       {
-        "id": 14,
+        "id": 16,
         "name": "Madness",
         "type": "e-commerce",
         "desc": "UX/UI<i></i>Front-end",
@@ -144,7 +164,7 @@
         "img": "https://mze.ninja/data/img/madness.jpg"
       },
       {
-        "id": 15,
+        "id": 17,
         "name": "Vojacka Zvona",
         "type": "web monograph",
         "desc": "UX/UI<i></i>Front-end",
