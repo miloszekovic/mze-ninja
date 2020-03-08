@@ -1,16 +1,20 @@
 /* JS Spinner */
 .sk-three-bounce {
-    margin: 40px 0;
     width: 80px;
 
+    margin: 40px 0;
+
     .sk-child {
+        display: inline-block;
+
         width: 15px;
         height: 15px;
-        display: inline-block;
+
+        margin-right: 4px;
+
         background: $darker;
         @include rounded--corners(100%);
         @include animations(sk-three-bounce 1.4s ease-in-out 0s infinite both);
-        margin-right: 4px;
 
         &.sk-bounce1 {
             -webkit-animation-delay: -0.32s;

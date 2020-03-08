@@ -8,26 +8,27 @@
     @include animations(content-blur .5s);
 
     section {
-        background: -webkit-linear-gradient(130deg, transparent 95%, $base-mid 5%);
-        background: -o-linear-gradient(130deg, transparent 95%, $base-mid 5%);
-        background: -moz-linear-gradient(130deg, transparent 95%, $base-mid 5%);
-        background: linear-gradient(130deg, transparent 95%, $base-mid 5%);
+        background: -webkit-linear-gradient(20deg, transparent 96%, $base-dark 10%);
+        background: -o-linear-gradient(20deg, transparent 96%, $base-dark 10%);
+        background: -moz-linear-gradient(20deg, transparent 96%, $base-dark 10%);
+        background: linear-gradient(20deg, transparent 96%, $base-dark 10%);
 
-        @media screen and (max-width: 1080px) {
-            background: -webkit-linear-gradient(20deg, transparent 96%, $base-dark 10%);
-            background: -o-linear-gradient(20deg, transparent 96%, $base-dark 10%);
-            background: -moz-linear-gradient(20deg, transparent 96%, $base-dark 10%);
-            background: linear-gradient(20deg, transparent 96%, $base-dark 10%);
+        @media screen and (min-width: 1081px) {
+            background: -webkit-linear-gradient(130deg, transparent 95%, $base-mid 5%);
+            background: -o-linear-gradient(130deg, transparent 95%, $base-mid 5%);
+            background: -moz-linear-gradient(130deg, transparent 95%, $base-mid 5%);
+            background: linear-gradient(130deg, transparent 95%, $base-mid 5%);
         }
     }
 
-    h2, p {
-        padding-left: 13px;
-        padding-right: 13px;
+    h2, 
+    p {
+        padding-left: 0;
+        padding-right: 0;
 
-        @media screen and (max-width: 1594px) {
-            padding-left: 0;
-            padding-right: 0;
+        @media screen and (min-width: 1595px) {
+            padding-left: 13px;
+            padding-right: 13px;
         }
     }
 
@@ -42,10 +43,10 @@
     }
 
     p {
-        text-align: justify;
+        text-align: left;
 
-        @media screen and (max-width: 700px) {
-            text-align: left;
+        @media screen and (min-width: 701px) {
+            text-align: justify;
         }
     }
 
@@ -86,40 +87,40 @@
             }
 
             &:nth-child(4) {
-                @include font-size(3.8, 3);
-                margin-top: -4px;
                 padding-left: 25px;
+                margin-top: -2px;
+                @include font-size(2.5, 2);
 
-                @media screen and (max-width: 930px) {
-                    margin-top: -2px;
-                    @include font-size(2.5, 2);
+                @media screen and (min-width: 931px) {
+                    @include font-size(3.8, 3);
+                    margin-top: -4px;
                 }
             }
 
             &:nth-child(10) {
-                @include font-size(3, 2);
                 padding-left: 20px;
+                @include font-size(2, 2);
 
-                @media screen and (max-width: 930px) {
-                    @include font-size(2, 2);
+                @media screen and (min-width: 931px) {
+                    @include font-size(3, 2);
                 }
             }
 
             &:nth-child(11),
             &:nth-child(12) {
-                @include font-size(3.5, 3);
                 margin-top: -4px;
+                @include font-size(2.5, 2);
 
-                @media screen and (max-width: 930px) {
-                    @include font-size(2.5, 2);
+                @media screen and (min-width: 931px) {
+                    @include font-size(3.5, 3);
                 }
             }
 
             &:nth-child(13) {
-                @include font-size(3, 2);
+                @include font-size(2, 2);
 
-                @media screen and (max-width: 930px) {
-                    @include font-size(2, 2);
+                @media screen and (min-width: 931px) {
+                    @include font-size(3, 2);
                 }
             }
             
@@ -135,9 +136,9 @@
     }
 
     .container:hover {
-
+        
         .tech--icon--list li {
-    
+
             &:nth-child(1) {
                 color: #e34f26;
                 @include transitions(all 1s ease-in-out 0s);
