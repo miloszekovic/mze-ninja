@@ -22,6 +22,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## 14 - kreirati light theme
 ## 15 - hello words animation
 ## 16 - PWA
+## 17 - PWA
 
 ## Table of Contents
 
