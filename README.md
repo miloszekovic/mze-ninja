@@ -21,7 +21,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## 13 - osmisliti toggle checkbox za prebacivanje na light theme
 ## 14 - kreirati light theme
 ## 15 - hello words animation
-## 16 - PWAs
+## 16 - PWA
 
 ## Table of Contents
 
