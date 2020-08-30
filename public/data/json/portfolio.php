@@ -176,25 +176,3 @@
     ]';
     echo $json;
 ?>
-
-
-{
-    "id": 14,
-    "name": "Madness",
-    "type": "e-commerce",
-    "desc": "UX/UI<i></i>Front-end",
-    "year": 2009,
-    "url": "https://mze.ninja/sites/madness.rs/",
-    "urlName": "Madness.rs",
-    "img": "https://madness.mze.ninja/"
-  },
-  {
-    "id": 15,
-    "name": "Vojacka Zvona",
-    "type": "web monograph",
-    "desc": "UX/UI<i></i>Front-end",
-    "year": 2008,
-    "url": "https://mze.ninja/sites/vojackazvona.rs/",
-    "urlName": "Vojackazvona.rs",
-    "img": "https://vojackazvona.mze.ninja/"
-  }
