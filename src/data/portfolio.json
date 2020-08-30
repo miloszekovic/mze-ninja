@@ -137,7 +137,7 @@
     "year": 2009,
     "url": "https://mze.ninja/sites/madness.rs/",
     "urlName": "Madness.rs",
-    "img": "https://mze.ninja/data/img/madness.jpg"
+    "img": "https://madness.mze.ninja/"
   },
   {
     "id": 15,
@@ -147,6 +147,6 @@
     "year": 2008,
     "url": "https://mze.ninja/sites/vojackazvona.rs/",
     "urlName": "Vojackazvona.rs",
-    "img": "https://mze.ninja/data/img/zvona.jpg"
+    "img": "https://vojackazvona.mze.ninja/"
   }
 ]
