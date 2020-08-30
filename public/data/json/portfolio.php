@@ -159,7 +159,7 @@
         "type": "e-commerce",
         "desc": "UX/UI<i></i>Front-end",
         "year": 2009,
-        "url": "https://mze.ninja/sites/madness.rs/",
+        "url": "https://madness.mze.ninja/",
         "urlName": "Madness.rs",
         "img": "https://mze.ninja/data/img/madness.jpg"
       },
@@ -169,10 +169,32 @@
         "type": "web monograph",
         "desc": "UX/UI<i></i>Front-end",
         "year": 2008,
-        "url": "https://mze.ninja/sites/vojackazvona.rs/",
+        "url": "https://vojackazvona.mze.ninja/",
         "urlName": "Vojackazvona.rs",
         "img": "https://mze.ninja/data/img/zvona.jpg"
       }
     ]';
     echo $json;
 ?>
+
+
+{
+    "id": 14,
+    "name": "Madness",
+    "type": "e-commerce",
+    "desc": "UX/UI<i></i>Front-end",
+    "year": 2009,
+    "url": "https://mze.ninja/sites/madness.rs/",
+    "urlName": "Madness.rs",
+    "img": "https://madness.mze.ninja/"
+  },
+  {
+    "id": 15,
+    "name": "Vojacka Zvona",
+    "type": "web monograph",
+    "desc": "UX/UI<i></i>Front-end",
+    "year": 2008,
+    "url": "https://mze.ninja/sites/vojackazvona.rs/",
+    "urlName": "Vojackazvona.rs",
+    "img": "https://vojackazvona.mze.ninja/"
+  }
